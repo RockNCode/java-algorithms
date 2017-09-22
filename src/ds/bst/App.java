@@ -17,6 +17,8 @@ public class App {
 		myTree.preOrderPrint(myTree.root);
 		System.out.println("Post Order");
 		myTree.postOrderPrint(myTree.root);
+		System.out.println("In Order");
+		myTree.inOrderPrint(myTree.root);
 
 	}
 

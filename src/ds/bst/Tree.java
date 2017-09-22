@@ -53,4 +53,13 @@ public class Tree {
 		System.out.println(root.value + " ");
 
 	}
+
+	public void inOrderPrint(Node root) {
+		if(root == null)
+			return;
+
+		inOrderPrint(root.left);
+		System.out.println(root.value + " ");
+		inOrderPrint(root.right);
+	}
 }
