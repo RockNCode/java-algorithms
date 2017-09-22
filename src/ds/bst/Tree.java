@@ -43,4 +43,14 @@ public class Tree {
 		preOrderPrint(root.left);
 		preOrderPrint(root.right);
 	}
+
+	public void postOrderPrint(Node root) {
+		if(root == null)
+			return;
+
+		postOrderPrint(root.left);
+		postOrderPrint(root.right);
+		System.out.println(root.value + " ");
+
+	}
 }
