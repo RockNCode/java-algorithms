@@ -5,7 +5,6 @@ public class Tree {
 	Node root;
 
 	public void add(int value) {
-		System.out.println("add");
 		Node newNode = new Node (value);
 		if(root == null) {
 			root = newNode;
@@ -13,7 +12,6 @@ public class Tree {
 		}
 		Node current = root;
 		while(true) {
-			System.out.println("at while");
 			if(value <= current.value) {
 				// go left
 				if(current.left != null) {
@@ -36,7 +34,13 @@ public class Tree {
 		}
 	}
 
-	public void inorderPrint() {
+	public void preOrderPrint(Node root) {
 
+		if(root == null)
+			return;
+		System.out.println(root.value + " ");
+
+		preOrderPrint(root.left);
+		preOrderPrint(root.right);
 	}
 }

@@ -10,7 +10,7 @@ public class App {
 		myTree.add(4);
 		myTree.add(6);
 		myTree.add(3);
-
+		myTree.preOrderPrint(myTree.root);
 
 	}
 
